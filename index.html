@@ -59,19 +59,53 @@
 		.neon-title {
   font-family: 'Neonderthaw', cursive;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 800;
   color: #FF3A6E; /* dérivé lumineux de #96002A */
   text-shadow:
-    0 0 4px  #FF3A6E,
-    0 0 8px  #FF1E59,
-    0 0 16px #E00045,
-    0 0 28px #96002A,
-    0 0 45px #96002A,
-    0 0 65px #96002A;
-  
-  /* Animation de flicker */
-  animation: neon-flicker 2.2s infinite alternate;
-  will-change: opacity, text-shadow;
+    0 0 3px  #FF3A6E,
+    0 0 6px  #FF1E59,
+    0 0 10px #E00045,
+    0 0 14px #96002A;
+  animation: neon-soft 6s infinite ease-in-out;
+}
+
+/* Animation très subtile, seulement sur la taille de l’ombre */
+@keyframes neon-soft {
+  0%,
+  100% {
+    text-shadow:
+      0 0 3px  #FF3A6E,
+      0 0 6px  #FF1E59,
+      0 0 10px #E00045,
+      0 0 14px #96002A;
+  }
+
+  50% {
+    text-shadow:
+      0 0 4px  #FF3A6E,
+      0 0 9px  #FF1E59,
+      0 0 14px #E00045,
+      0 0 18px #96002A;
+  }
+}
+/* Animation très subtile, seulement sur la taille de l’ombre */
+@keyframes neon-soft {
+  0%,
+  100% {
+    text-shadow:
+      0 0 3px  #FF3A6E,
+      0 0 6px  #FF1E59,
+      0 0 10px #E00045,
+      0 0 14px #96002A;
+  }
+
+  50% {
+    text-shadow:
+      0 0 4px  #FF3A6E,
+      0 0 9px  #FF1E59,
+      0 0 14px #E00045,
+      0 0 18px #96002A;
+  }
 }
 
         .header h2 {
@@ -331,62 +365,7 @@
     border-radius: 50%;
     flex: 1;
 }
-     @keyframes neon-flicker {
-  0% {
-    opacity: 1;
-    text-shadow:
-      0 0 4px  #FF3A6E,
-      0 0 8px  #FF1E59,
-      0 0 16px #E00045,
-      0 0 28px #96002A,
-      0 0 45px #96002A,
-      0 0 65px #96002A;
-  }
-
-  10% {
-    opacity: 0.8;
-  }
-
-  18% {
-    opacity: 0.4;
-    text-shadow:
-      0 0 2px  #FF3A6E,
-      0 0 4px  #FF1E59,
-      0 0 8px  #96002A;
-  }
-
-  22% {
-    opacity: 1;
-  }
-
-  32% {
-    opacity: 0.7;
-  }
-
-  45% {
-    opacity: 1;
-  }
-
-  55% {
-    opacity: 0.5;
-    text-shadow:
-      0 0 3px  #FF3A6E,
-      0 0 6px  #FF1E59,
-      0 0 12px #96002A;
-  }
-
-  62% {
-    opacity: 1;
-  }
-
-  78% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
+   
   
 
         @media (max-width: 600px) {
@@ -716,6 +695,7 @@
 </body>
 
 </html>
+
 
 
 
