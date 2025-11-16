@@ -66,10 +66,10 @@
     0 0 6px  #FFECCF,
     0 0 10px #FFE0B8,
     0 0 14px #FFCFA1;
-  animation: neon-soft-cream 6s infinite ease-in-out;
+  animation: neon-soft-cream 4s infinite ease-in-out;
 }
-/* Animation très douce, sans opacité, compatible iOS */
-@keyframes neon-soft-cream {
+/* Flicker plus prononcé, mais sans opacité ni grosses ombres */
+@keyframes neon-flicker-cream {
   0%, 100% {
     text-shadow:
       0 0 3px  #FFF7E6,
@@ -78,15 +78,54 @@
       0 0 14px #FFCFA1;
   }
 
-  50% {
+  15% {
+    text-shadow:
+      0 0 2px  #FFF7E6,
+      0 0 4px  #FFECCF,
+      0 0 7px  #FFE0B8,
+      0 0 10px #FFCFA1;
+  }
+
+  22% {
+    text-shadow:
+      0 0 1px  #FFF7E6,
+      0 0 2px  #FFECCF,
+      0 0 4px  #FFE0B8,
+      0 0 6px  #FFCFA1;
+  }
+
+  28% {
+    text-shadow:
+      0 0 3px  #FFF7E6,
+      0 0 6px  #FFECCF,
+      0 0 10px #FFE0B8,
+      0 0 14px #FFCFA1;
+  }
+
+  55% {
     text-shadow:
       0 0 4px  #FFF7E6,
       0 0 8px  #FFECCF,
       0 0 12px #FFE0B8,
       0 0 18px #FFCFA1;
   }
-}
 
+  70% {
+    text-shadow:
+      0 0 2px  #FFF7E6,
+      0 0 4px  #FFECCF,
+      0 0 7px  #FFE0B8,
+      0 0 10px #FFCFA1;
+  }
+
+  82% {
+    text-shadow:
+      0 0 3px  #FFF7E6,
+      0 0 6px  #FFECCF,
+      0 0 10px #FFE0B8,
+      0 0 14px #FFCFA1;
+  }
+}
         .header h2 {
             font-size: 20px;
             margin-bottom: 10px;
@@ -674,6 +713,7 @@
 </body>
 
 </html>
+
 
 
 
