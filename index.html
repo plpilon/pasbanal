@@ -68,17 +68,18 @@
     0 0 14px #FFCFA1;
   animation: neon-soft-cream 2s infinite ease-in-out;
 }
-/* Flicker plus prononcé, mais sans opacité ni grosses ombres */
+/* Flicker plus prononcé, mais toujours sans opacité ni énormes ombres */
 @keyframes neon-flicker-cream {
   0%, 100% {
     text-shadow:
-      0 0 3px  #FFF7E6,
-      0 0 6px  #FFECCF,
-      0 0 10px #FFE0B8,
-      0 0 14px #FFCFA1;
+      0 0 4px  #FFF7E6,
+      0 0 8px  #FFECCF,
+      0 0 14px #FFE0B8,
+      0 0 20px #FFCFA1;
   }
 
-  15% {
+  10% {
+    /* léger affaiblissement */
     text-shadow:
       0 0 2px  #FFF7E6,
       0 0 4px  #FFECCF,
@@ -86,46 +87,60 @@
       0 0 10px #FFCFA1;
   }
 
-  22% {
+  18% {
+    /* quasi off, effet “glitch” court */
     text-shadow:
-      0 0 1px  #FFF7E6,
-      0 0 2px  #FFECCF,
-      0 0 4px  #FFE0B8,
-      0 0 6px  #FFCFA1;
+      0 0 0px  #FFF7E6,
+      0 0 1px  #FFECCF,
+      0 0 2px  #FFE0B8,
+      0 0 3px  #FFCFA1;
   }
 
-  28% {
-    text-shadow:
-      0 0 3px  #FFF7E6,
-      0 0 6px  #FFECCF,
-      0 0 10px #FFE0B8,
-      0 0 14px #FFCFA1;
-  }
-
-  55% {
+  24% {
+    /* revient fort d’un coup */
     text-shadow:
       0 0 4px  #FFF7E6,
       0 0 8px  #FFECCF,
-      0 0 12px #FFE0B8,
-      0 0 18px #FFCFA1;
+      0 0 14px #FFE0B8,
+      0 0 20px #FFCFA1;
   }
 
-  70% {
+  45% {
+    /* glow plus large, phase “plein jus” */
     text-shadow:
-      0 0 2px  #FFF7E6,
-      0 0 4px  #FFECCF,
-      0 0 7px  #FFE0B8,
-      0 0 10px #FFCFA1;
+      0 0 5px  #FFF7E6,
+      0 0 10px #FFECCF,
+      0 0 16px #FFE0B8,
+      0 0 22px #FFCFA1;
   }
 
-  82% {
+  60% {
+    /* retombe un peu */
     text-shadow:
       0 0 3px  #FFF7E6,
       0 0 6px  #FFECCF,
       0 0 10px #FFE0B8,
       0 0 14px #FFCFA1;
   }
+
+  72% {
+    /* petit hoquet de lumière */
+    text-shadow:
+      0 0 1px  #FFF7E6,
+      0 0 3px  #FFECCF,
+      0 0 5px  #FFE0B8,
+      0 0 7px  #FFCFA1;
+  }
+
+  85% {
+    text-shadow:
+      0 0 4px  #FFF7E6,
+      0 0 8px  #FFECCF,
+      0 0 14px #FFE0B8,
+      0 0 20px #FFCFA1;
+  }
 }
+
         .header h2 {
             font-size: 20px;
             margin-bottom: 10px;
@@ -713,6 +728,7 @@
 </body>
 
 </html>
+
 
 
 
